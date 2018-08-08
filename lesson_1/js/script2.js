@@ -14,4 +14,4 @@ mainList.shopGoods.push(prompt("Какой тип товаров будем пр
 mainList.shopGoods.push(prompt("Какой тип товаров будем продавать?"));
 var budget1 = mainList.budget / 30;
 console.log(budget1);
-
+alert("Ваш бюджет на день: " + budget1 + " рублей")
