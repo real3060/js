@@ -1,10 +1,10 @@
 var mainList = {
+	budget:30000,
+	name:"алешка",
 	shopGoods: [],
 	employers: {},
 	open: true
 };
-mainList.budget = prompt("Ваш бюджет на месяц?", "35000");
-mainList.budget = prompt("Ваш бюджет на месяц?", "35000");
 mainList.budget = prompt("Ваш бюджет на месяц?", "35000");
 console.log(mainList.budget);
 mainList.name = prompt("Название вашего магазина?");
@@ -19,3 +19,4 @@ mainList.shopGoods.push(prompt("Какой тип товаров будем пр
 var budget1 = mainList.budget / 30;
 console.log(budget1);
 alert("Ваш бюджет на день: " + budget1 + " рублей")
+console.log(mainList);
