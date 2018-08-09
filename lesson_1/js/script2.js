@@ -1,13 +1,13 @@
 var mainList = {
-	budget:30000,
-	name:"алешка",
+	budget: yourBudget,
+	name: nameOfShop,
 	shopGoods: [],
 	employers: {},
 	open: true
 };
-mainList.budget = prompt("Ваш бюджет на месяц?", "35000");
-console.log(mainList.budget);
-mainList.name = prompt("Название вашего магазина?");
+ var yourBudget = prompt("Ваш бюджет на месяц?", "35000");
+console.log(yourBudget);
+var nameOfShop = prompt("Название вашего магазина?");
 console.log(mainList.name);
 
 
