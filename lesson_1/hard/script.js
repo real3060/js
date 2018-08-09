@@ -6,4 +6,4 @@ var num5 = "1";
 
 console.log(+(num1 * num2 * num3 * num4 * num5));
 var summ = +(num1 * num2 * num3 * num4 * num5);
-alert(((Math.pow(summ, 3)).toString()).slice(0, 2));
+alert(((summ ** 3).toString()).slice(0, 2));
