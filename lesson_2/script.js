@@ -28,6 +28,10 @@ switch (num) {
 		break;
 }
 
+for (let i= 0;  i < 8; i++) {
+	console.log(i);
+}
+
 // while (num < 55) {
 // 	console.log(num);  пока num < 55 выводить в консоль прибавляя по одному
 // 	num++;
@@ -42,8 +46,5 @@ switch (num) {
 // }
 // while (num < 55);
 
-for (let i= 0;  i < 8; i++) {
-	console.log(i);
-}
 
 
