@@ -24,15 +24,17 @@ console.log(mainList);
 // mainList.name = prompt("Название вашего магазина?");
 // console.log(mainList.name);
 
-// for (let i = 0; i < 5; i++) {
-//     let a = prompt("Какой тип товаров будем продавать?");
+for (let i = 0; i < 5; i++) {
+    let a = prompt("Какой тип товаров будем продавать?");
 
-// 				console.log('Все верно');
-// 					if ((typeof (a)) === 'string' && (typeof (a)) === null && a != "" && a.length < 50) {
-//         mainList.shopGoods[i] = a;
-//     } else {
-//     }
-// }
+	if (a != null && a != "" && a.length < 50) {
+    mainList.shopGoods[i] = a;
+	console.log("Все верно");
+    } else {
+	i--;
+	console.log('что-то не так');
+    }
+}
 
 // if (time < 0) {
 //     console.log("Такого просто не может быть!");
