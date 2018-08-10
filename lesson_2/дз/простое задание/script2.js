@@ -1,8 +1,21 @@
+var yourBudget = prompt("Ваш бюджет на месяц?", "35000");
+var nameOfShop = prompt("Название вашего магазина?");
+
 var mainList = {
-    shopGoods: [],
-    employers: {},
-    open: true
+	budget: yourBudget,
+	name: nameOfShop,
+	shopGoods: [],
+	employers: {},
+	open: true
 };
+console.log(mainList.budget);
+console.log(mainList.name);
+
+alert("Ваш бюджет на день: " + yourBudget / 30 + " рублей")
+
+console.log(mainList);
+
+
 // let time = 19;
 // mainList.budget = prompt("Ваш бюджет на месяц?", "35000");
 // mainList.budget = prompt("Ваш бюджет на месяц?", "35000");
@@ -29,38 +42,45 @@ var mainList = {
 //     console.log("уже слишком поздно");
 // } else {
 //     console.log(" в сутках только 24 часа!");
-
 // }
-
-
 
 /* mainList.shopGoods.push(prompt("Какой тип товаров будем продавать?"));
 mainList.shopGoods.push(prompt("Какой тип товаров будем продавать?")); TODO: заменили выше циклом for.
 mainList.shopGoods.push(prompt("Какой тип товаров будем продавать?")); */
 // можно использовать как
 // mainList.shopGoods[0] = prompt("Какой тип товаров будем продавать?");
-var budget1 = mainList.budget / 30;
-console.log(budget1);
-alert("Ваш бюджет на день: " + budget1 + " рублей")
 
-console.log(mainList);
 // TODO: сделано по типу while 
 // var e = 0;
 // while (e < 3) {
-// 	mainList.shopGoods.push(prompt("Какой тип товаров будем продавать?"))
-// 	e++;    
+// 	let a = prompt("Какой тип товаров будем продавать?");
+// 	if (a !==null && a !='' && a.length < 50) {
+// 	mainList.shopGoods[e] = a;
+// 	console.log("все верно!");
+// 	e++;
+// 	} else {
+// 		console.log("Что-то пропустили....");
+// 	}
 // }
 // console.log(mainList);
 // TODO: сделано по типу while 
 
 
-
-// // TODO: do while
+// TODO: do while
 
 // var w = 0;
 // do {
-// 	mainList.shopGoods.push(prompt("Какой тип товаров будем продавать?"));
-// 	w++;
+// 	let a = prompt("Какой тип товаров будем продавать?");
+// 	if (a !==null && a != "" && a.length < 50) {
+// 		console.log("Все верно!");
+// 		mainList.shopGoods[w] = a;
+// 		w++
+// 	}
+// 	// else if( w !==0){
+// 	// 	w -= 1;
+// 	// }
 // } while (w < 3);
 
-// // TODO: конец do while
+// TODO: конец do while
+
+console.log(mainList);
