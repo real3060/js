@@ -11,7 +11,7 @@ let str5 = str3[5] = "о";
 console.log(str4);
 console.log(str5);
 let str6 = str1.slice(19, 23) + str4 + str5;
-// alert(str6);
+ // alert(str6);
 arr = [20, 33, 1, 'Человек', 2, 3];
 arr.splice(3, 1);
 console.log(arr);
