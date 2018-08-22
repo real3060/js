@@ -1,0 +1,15 @@
+.box {
+	border: 1px solid gray;
+	box-sizing: border-box;
+	background: #EEEEEE;
+	width: 400px;
+	height: 400px;
+	position: relative;
+}
+
+.block {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background: #a32222;
+}
