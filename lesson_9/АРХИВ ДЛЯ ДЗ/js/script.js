@@ -88,8 +88,9 @@ setClock('timer', deadLine);
 		this.classList.add('more-splash');
 		overlay.style.display = "block";
 		document.body.style.overflow = "hidden";
-		
 	});
+
+
 	close.addEventListener('click', function() {
 		overlay.style.display = 'none';
 		more.classList.remove('more-splash');
@@ -114,7 +115,7 @@ setClock('timer', deadLine);
 		//  цикл
 	if(window.screen.width > 600) {
 		
-		for ( let i =0; i<4; i++)
+		for ( let i =0; i<knowMore.length; i++)
 		knowMore[i].addEventListener('click', function() {
 			if(i === 2 && window.screen.width> 600 && browser != "IE") {
 				knowMore[i].classList.remove('more-splash'); //удалил огненную кнопку
