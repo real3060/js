@@ -116,7 +116,7 @@ setClock('timer', deadLine);
 	if(window.screen.width > 600) {
 		
 		for ( let i =0; i<knowMore.length; i++)
-		knowMore[i].addEventListener('click', function() {
+		knowMore[i].addEventListener('click', () => {
 			if(i === 2 && window.screen.width> 600 && browser != "IE") {
 				knowMore[i].classList.remove('more-splash'); //удалил огненную кнопку
 				knowMore[i].classList.add('animation-open'); //добавил свой класс анимации
@@ -131,7 +131,7 @@ setClock('timer', deadLine);
 				overlay.classList.add('active');
 				var opacit = 0.1;
 				overlay.style.display = 'block';
-				var timer = setInterval(function () {
+				var timer = setInterval( ()=> {
 				if (opacit >= 1){
 					clearInterval(timer);
 				}
@@ -149,7 +149,7 @@ setClock('timer', deadLine);
 		})
 	} else {
 		for ( let i =0; i<4; i++) 
-		knowMore[i].addEventListener('click', function() {
+		knowMore[i].addEventListener('click', ()=> {
 			knowMore[i].classList.remove('more-splash');
 			overlay.classList.remove('fade');
 			overlay.style.display = "block";
