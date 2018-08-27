@@ -159,5 +159,18 @@ window.addEventListener('DOMContentLoaded', () => {
 				document.body.style.overflow = "hidden";
 
 			});
-	}
+	};
+
+
+
+	// form
+
+
+	let message = new object();
+	message.loading = "Загрузка.....";
+	message.success = "Спасибо, скоро мы с Вами свяжемся... ";
+	message.failure = "Чтото пошло не так...";
+
+
+	
 });
