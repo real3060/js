@@ -323,20 +323,20 @@ window.addEventListener('DOMContentLoaded', () => {
 			totalValue.innerHTML = total;
 		};
 		//символы
-		persons.onkeyup = function(e) {
-			let errS = "+e,.E";
+		persons.onkeyup = function (e) {
+
 			let key = String.fromCharCode(e.which);
-			if(errS.indexOf(key) >= 0){
-				console.log('invalid key pressed');    
+			if (errS.indexOf(key) >= 0) {
+				console.log('invalid key pressed');
 				return false;
 			}
-			return true;    
+			return true;
 		};
 	});
 	restDays.addEventListener('change', function () {
 		daysSum = +this.value
 		total = (daysSum + personsSum) * 4000;
-		if (persons.value == "" ) {
+		if (persons.value == "") {
 			totalValue.innerHTML = 0;
 		} else {
 			totalValue.innerHTML = parseInt(total);
@@ -351,6 +351,13 @@ window.addEventListener('DOMContentLoaded', () => {
 			totalValue.innerHTML = a * this.options[this.selectedIndex].value;
 		}
 	})
-
+	// замена символов restDays
+	restDays.onkeyup = function () {
+        return this.value = this.value.replace(/[\D{3}]/g, '')
+    };
+	// замена символов  persons
+	persons.onkeyup = function() {
+		return this.value = this.value.replace(/[\D{3}]/g, '')
+	}
 });
 
