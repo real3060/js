@@ -1,10 +1,11 @@
+"use strict"
 window.addEventListener('DOMContentLoaded', () => {
-	let tab = require("../parts/tab.js");
-	let modal = require("../parts/modal.js");
-	let ajax = require("../parts/ajax.js");
-	let slider = require("../parts/slider.js");
-	let calc = require("../parts/calc.js");
-	let timer = require("../parts/timer.js");
+	var tab = require("../parts/tab.js");
+	var modal = require("../parts/modal.js");
+	var ajax = require("../parts/ajax.js");
+	var slider = require("../parts/slider.js");
+	var calc = require("../parts/calc.js");
+	var timer = require("../parts/timer.js");
 	tab();
 	modal();
 	ajax();
