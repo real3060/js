@@ -129,10 +129,8 @@
 
 
 			place.addEventListener('change', function () {
-				if (persons.value == "" || restDays.value == "") {
-					if (persons.value == "0" || restDays == "0") {
-						totalValue.innerHTML = 0;
-					}
+				if (persons.value == "" || persons.value == "0" || restDays.value == "" || restDays.value == "0") {
+					totalValue.innerHTML = 0;
 				} else {
 					var a = total;
 					totalValue.innerHTML = a * this.options[this.selectedIndex].value;
