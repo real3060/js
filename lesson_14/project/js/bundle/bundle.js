@@ -104,11 +104,11 @@
 
 			persons.addEventListener('change', function () {
 				personsSum = +this.value;
-				total = (daysSum + personsSum) * 4000;
+				total = (daysSum * personsSum) * 4000;
 
 				if (persons.value == "" || persons.value == "0" || restDays.value == "" || restDays.value == "0") {
 					totalValue.innerHTML = 0;
-				
+
 				} else {
 					totalValue.innerHTML = parseInt(total);
 				}
@@ -118,7 +118,7 @@
 
 			restDays.addEventListener('change', function () {
 				daysSum = +this.value;
-				total = (daysSum + personsSum) * 4000;
+				total = (daysSum * personsSum) * 4000;
 
 				if (persons.value == "" || persons.value == "0" || restDays.value == "" || restDays.value == "0") {
 					totalValue.innerHTML = 0;
