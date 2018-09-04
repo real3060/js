@@ -9,7 +9,7 @@ let assert = require('chai').assert
 
 describe("sum", function() {
     it("Получаем тип данных строка", function() {
-        assert.typeOf(sum(2,2), 'boolean')
+        assert.typeOf(sum(2,15), 'boolean')
     })
 })
 
@@ -42,10 +42,9 @@ console.log(each(arr, myFunc));
 describe("startArr", function() {
     it("Получаем результат функции startarr", function() {
         assert.typeOf(each(arr, myFunc), 'array')
-    })
-})
-describe("startArr.lenght", function() {
+    });
     it('Проверяем что длинна равна 5', function() {
         assert.lengthOf(each(arr, myFunc), 5)
     })
+
 })
