@@ -110,7 +110,7 @@
 					totalValue.innerHTML = 0;
 
 				} else {
-					totalValue.innerHTML = parseInt(total);
+					totalValue.innerHTML = a * this.options[this.selectedIndex].value;
 				}
 
 			});
@@ -123,7 +123,7 @@
 				if (persons.value == "" || persons.value == "0" || restDays.value == "" || restDays.value == "0") {
 					totalValue.innerHTML = 0;
 				} else {
-					totalValue.innerHTML = parseInt(total);
+					totalValue.innerHTML = a * this.options[this.selectedIndex].value;
 				}
 			});
 
