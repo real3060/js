@@ -1,7 +1,7 @@
 function tab() {
-  var tab = document.getElementsByClassName('info-header-tab'),
-      tabContent = document.getElementsByClassName('info-tabcontent'),
-      info = document.getElementsByClassName('info-header')[0];
+  var tab = document.getElementsByClassName('info-header-tab'),//кнопки
+      tabContent = document.getElementsByClassName('info-tabcontent'),//таб
+      info = document.getElementsByClassName('info-header')[0];//
 
   function hideTabContent(a) {
     for (var i = a; i < tabContent.length; i++) {

@@ -10,6 +10,7 @@ function ajax() {
       input = form.getElementsByTagName('input'),
       statusMessage = document.createElement('div');
   statusMessage.classList.add('status');
+  
   form.addEventListener('submit', function (event) {
     event.preventDefault();
     form.appendChild(statusMessage); //AJAX
@@ -35,7 +36,8 @@ function ajax() {
     for (var i = 0; i < input.length; i++) {
       input[i].value = ""; // очищаем инпут
     }
-  }); // form contacts
+  }); 
+  // form contacts
 
   var contactForm = document.getElementsByClassName('contact-form')[0],
       inputContacts = contactForm.getElementsByTagName('input');
